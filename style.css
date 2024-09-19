@@ -290,75 +290,82 @@ section .header {
     color: #fff;
     margin-bottom: 0.75rem;
 }
+
 .pricing .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
+
 .pricing .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .pricing .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
     transform: scale(1.05);
 }
-/* ... other CSS rules ... */
 
 footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
-  gap: 2rem;
-  animation: fadeIn 1s ease-out;
-  background-color: #18181B; /* Match the body background color */
-  padding: 2rem; /* Add padding for spacing */
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+    animation: fadeIn 1s ease-out;
+    background-color: #18181B; /* Match the body background color */
+    padding: 2rem; /* Add padding for spacing */
 }
 
 footer .column p {
-  color: #999999; /* Lighter text color for better readability */
-  margin-bottom: 2rem;
+    color: #999999; /* Lighter text color for better readability */
+    margin-bottom: 2rem;
 }
 
 footer .column .socials {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 footer .column .socials a {
-  color: #999999; /* Lighter text color for better readability */
-  border: 1px solid #999999;
-  padding: 5px 10px;
-  font-size: 1.25rem;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    color: #999999; /* Lighter text color for better readability */
+    border: 1px solid #999999;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 footer .column .socials a:hover {
-  background-color: #1d4ed8;
-  color: #fff;
+    color: #18181B; /* Dark background for social icons */
+    background-color: #1d4ed8; /* Blue background on hover */
 }
 
-footer .column .socials i {
-  transition: transform 0.3s ease;
+footer .column .socials a i {
+    font-size: 1.5rem; /* Larger icon size */
 }
 
-footer .column .socials a:hover i {
-  transform: scale(1.1);
+footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #999999; /* Lighter text color for better readability */
 }
 
-.copyright {
-  background-color: #18181B; /* Match the body background color */
-  padding: 1rem;
-  text-align: center;
-  color: #999999; /* Lighter text color for better readability */
+footer .footer-bottom a {
+    color: #1d4ed8; /* Blue text color for links */
+    font-size: 0.9rem;
 }
 
-/* ... other CSS rules ... */
+footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -369,6 +376,7 @@ footer .column .socials a:hover i {
         transform: translateY(0);
     }
 }
+
 @keyframes slideIn {
     from {
         opacity: 0;
