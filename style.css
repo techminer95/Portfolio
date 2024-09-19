@@ -11,8 +11,6 @@
 img {
     width: 100%;
     display: flex;
-    /* Removed potential broken image styles */
-    /* Example: if you have 'display: none' for broken images, you might need to address it here */
 }
 
 a {
@@ -39,7 +37,6 @@ nav {
 
 .nav-logo {
     max-width: 100px;
-    /* Removed logo-specific image styles */
 }
 
 .nav-links {
@@ -149,7 +146,6 @@ header .content p {
 
 header .image {
     position: relative;
-    /* Removed potential image container styles */
 }
 
 header .image::before {
@@ -294,73 +290,78 @@ section .header {
     color: #fff;
     margin-bottom: 0.75rem;
 }
-
 .pricing .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
-
 .pricing .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .pricing .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
     transform: scale(1.05);
 }
+/* ... other CSS rules ... */
 
 footer {
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
-    animation: fadeIn 1s ease-out;
-    background-color: #18181B; /* Match the body background color */
-    padding: 2rem; /* Add padding for spacing */
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+  animation: fadeIn 1s ease-out;
+  background-color: #18181B; /* Match the body background color */
+  padding: 2rem; /* Add padding for spacing */
 }
 
 footer .column p {
-    color: #999999; /* Lighter text color for better readability */
-    margin-bottom: 2rem;
+  color: #999999; /* Lighter text color for better readability */
+  margin-bottom: 2rem;
 }
 
 footer .column .socials {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer .column .socials a {
-    color: #999999; /* Lighter text color for better readability */
-    border: 1px solid #999999;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: color 0.3s ease, border-color 0.3s ease;
+  color: #999999; /* Lighter text color for better readability */
+  border: 1px solid #999999;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 footer .column .socials a:hover {
-    color: #1d4ed8;
-    border-color: #1d4ed8;
+  background-color: #1d4ed8;
+  color: #fff;
 }
 
 footer .column .socials i {
-    font-size: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
-footer .column h3 {
-    color: #fff;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+footer .column .socials a:hover i {
+  transform: scale(1.1);
 }
 
-footer .bottom {
-    grid-column: span 4;
-    text-align: center;
-    color: #999999; /* Lighter text color for better readability */
+.copyright {
+  background-color: #18181B; /* Match the body background color */
+  padding: 1rem;
+  text-align: center;
+  color: #999999; /* Lighter text color for better readability */
+}
+
+/* ... other CSS rules ... */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
 }
