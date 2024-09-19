@@ -389,6 +389,7 @@ footer .socials .fa-linkedin {
 }
 
 @media screen and (max-width: 768px) {
+  /* Adjust navigation bar for smaller screens */
   nav {
     flex-direction: column;
     align-items: center;
@@ -405,16 +406,18 @@ footer .socials .fa-linkedin {
     font-size: 1rem; /* Adjust font size for mobile */
   }
 
+  /* Adjust grid layout for features and pricing sections */
   .features,
   .pricing {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
   }
 
   .pricing .card,
   .features .card {
-    padding: 1rem;
+    padding: 1rem; /* Adjust padding for card content */
   }
 
+  /* Adjust social icons for smaller screens */
   .socials {
     flex-direction: column;
     align-items: center;
@@ -423,16 +426,19 @@ footer .socials .fa-linkedin {
   .socials a {
     margin-bottom: 10px; /* Space between social icons */
   }
-  
+
+  /* Adjust footer padding */
   footer {
     padding: 1rem;
   }
 
+  /* Center align header content for mobile */
   .header .content {
     text-align: center;
   }
 
+  /* Adjust container padding for smaller screens */
   .container {
-    padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    padding: 3rem 1rem; /* Adjust padding for better spacing */
   }
 }
