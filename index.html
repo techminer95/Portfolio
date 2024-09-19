@@ -1,63 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page</title>
-    <style>
-        body {
-            background-color: #333; /* Example dark background */
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .column {
-            width: 30%;
-        }
-
-        .column h4, 
-        .column a {
-            color: white; /* Set text color to white */
-        }
-
-        .column a {
-            display: block;
-            margin: 5px 0;
-            text-decoration: none;
-        }
-
-        .column a:hover {
-            color: #cccccc; /* Optional: Light gray on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio | Muhammad Rameez</title>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="column">
-      <h4>Resources</h4>
-      <a href="#">Blogs</a>
-      <a href="#">Tutorials</a>
-      <a href="#">Guides</a>
-    </div>
-    <div class="column">
-      <h4>About Me</h4>
-      <a href="#">Biography</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="column">
-      <h4>Contact</h4>
-      <a href="#">Get in Touch</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
-    </div>
-</div>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png" alt="Muhammad Rameez Logo">
+            </a>
+        </div>
 
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Projects</a></li>
+            <li id="link2" class="link"><a href="#">Skills</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
+        </ul>
+        <button class="btn">Contact Me</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>BUILDING THE FUTURE OF SOFTWARE</h4>
+            <h1>Hi, I'm <span>Muhammad Rameez</span>, Software Engineer</h1>
+            <p>
+                Passionate software engineer with experience in C++, Python, and machine learning. I specialize in creating efficient and innovative solutions, from terminal applications to interactive games. Let's build something amazing together!
+            </p>
+            <button class="btn">Explore My Work</button>
+    </header>
+
+    <section class="container">
+        <h2 class="header">MY PROJECTS</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-code-line"></i></span>
+                <h4>Terminal Banking System</h4>
+                <p>
+                    A comprehensive banking system featuring secure logins, transaction handling, and loan applications.
+                </p>
+                <a href="#">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-game-line"></i></span>
+                <h4>Interactive Games</h4>
+                <p>
+                    Engaging games including Tic-Tac-Toe with AI and a Flappy Bird clone, showcasing my programming skills.
+                </p>
+                <a href="#">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-tools-line"></i></span>
+                <h4>GUI Text Editor</h4>
+                <p>
+                    A basic text editor with features like find, replace, and undo, demonstrating my GUI development skills.
+                </p>
+                <a href="#">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-article-line"></i></span>
+                <h4>Schedule Management System</h4>
+                <p>
+                    A system for managing schedules, showcasing my expertise in software solutions for everyday tasks.
+                </p>
+                <a href="#">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">SKILLS & EXPERTISE</h2>
+        <p class="sub-header">
+            My skill set includes various programming languages, tools, and methodologies that help me tackle complex problems and deliver high-quality software solutions.
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Programming</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        C++
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Python
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Data Structures & Algorithms
+                    </p>
+                </div>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Machine Learning</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Linear Algebra
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Neural Networks
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        AI Algorithms
+                    </p>
+                </div>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Software Development</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        GUI Development
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Terminal Applications
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Project Management
+                    </p>
+                </div>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png" alt="Muhammad Rameez Logo">
+            </div>
+            <p>
+                Innovative software solutions and dedication to excellence. Let's connect and create something remarkable.
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-github-line"></i></a>
+                <a href="#"><i class="ri-linkedin-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Resources</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Guides</a>
+        </div>
+        <div class="column">
+            <h4>About Me</h4>
+            <a href="#">Biography</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Get in Touch</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 Muhammad Rameez. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
