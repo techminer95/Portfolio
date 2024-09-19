@@ -11,6 +11,8 @@
 img {
     width: 100%;
     display: flex;
+    /* Removed potential broken image styles */
+    /* Example: if you have 'display: none' for broken images, you might need to address it here */
 }
 
 a {
@@ -37,6 +39,7 @@ nav {
 
 .nav-logo {
     max-width: 100px;
+    /* Removed logo-specific image styles */
 }
 
 .nav-links {
@@ -146,6 +149,7 @@ header .content p {
 
 header .image {
     position: relative;
+    /* Removed potential image container styles */
 }
 
 header .image::before {
@@ -290,17 +294,20 @@ section .header {
     color: #fff;
     margin-bottom: 0.75rem;
 }
+
 .pricing .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
+
 .pricing .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .pricing .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
@@ -331,54 +338,29 @@ footer .column .socials {
 footer .column .socials a {
     color: #999999; /* Lighter text color for better readability */
     border: 1px solid #999999;
-    padding: 5px 10px;
-    font-size: 1.25rem;
+    padding: 0.5rem;
     border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 footer .column .socials a:hover {
-    color: #18181B; /* Dark background for social icons */
-    background-color: #1d4ed8; /* Blue background on hover */
+    color: #1d4ed8;
+    border-color: #1d4ed8;
 }
 
-footer .column .socials a i {
-    font-size: 1.5rem; /* Larger icon size */
+footer .column .socials i {
+    font-size: 1.5rem;
 }
 
-footer .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+footer .column h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer .bottom {
+    grid-column: span 4;
+    text-align: center;
     color: #999999; /* Lighter text color for better readability */
-}
-
-footer .footer-bottom a {
-    color: #1d4ed8; /* Blue text color for links */
-    font-size: 0.9rem;
-}
-footer .footer-bottom a:hover {
-    text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
