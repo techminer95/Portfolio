@@ -290,78 +290,75 @@ section .header {
     color: #fff;
     margin-bottom: 0.75rem;
 }
+
 .pricing .card p i {
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
+
 .pricing .card button {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .pricing .card button:hover {
     background-color: #1e40af;
     border-color: #1e40af;
     transform: scale(1.05);
 }
-/* ... other CSS rules ... */
-
 footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
-  gap: 2rem;
-  animation: fadeIn 1s ease-out;
-  background-color: #18181B; /* Match the body background color */
-  padding: 2rem; /* Add padding for spacing */
+    background-color: #18181B; /* Dark background for footer */
+    color: #FFFFFF; /* White text color */
+    padding: 1rem;
+    text-align: center; /* Center align text in the footer */
 }
 
-footer .column p {
-  color: #999999; /* Lighter text color for better readability */
-  margin-bottom: 2rem;
+footer .footer-bottom {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    color: #FFFFFF; /* White text color for copyright */
 }
 
-footer .column .socials {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+footer .footer-bottom p {
+    margin: 0; /* Remove default margin */
 }
 
-footer .column .socials a {
-  color: #999999; /* Lighter text color for better readability */
-  border: 1px solid #999999;
-  padding: 5px 10px;
-  font-size: 1.25rem;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, color 0.3s ease;
+
+footer .footer-bottom a:hover {
+    text-decoration: underline;
 }
 
 footer .column .socials a:hover {
-  background-color: #1d4ed8;
-  color: #fff;
+    color: #FFFFFF; /* White color for social icons on hover */
+    background-color: #1d4ed8; /* Blue background on hover */
 }
 
-footer .column .socials i {
-  transition: transform 0.3s ease;
+footer .column .socials a i {
+    font-size: 1.5rem; /* Larger icon size */
 }
 
-footer .column .socials a:hover i {
-  transform: scale(1.1);
-}
-
-.copyright {
-  background-color: #18181B; /* Match the body background color */
-  padding: 1rem;
-  text-align: center;
-  color: #999999; /* Lighter text color for better readability */
-}
-
-/* ... other CSS rules ... */
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
