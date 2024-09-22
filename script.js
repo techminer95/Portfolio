@@ -43,3 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Element with ID link3 not found.');
     }
 });
+
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    const mainContent = document.querySelector('.main-content');
+  
+    // Show loader for 1 second
+    setTimeout(() => {
+      loader.style.display = 'none';  // Hide loader
+      mainContent.style.display = 'block';  // Show main content
+    }, 800);  // 1000 ms = 1 second
+  });
+  
