@@ -11,10 +11,18 @@
 
 <body>
 
-    <div class="loader"></div> <!-- Loader added here -->
-
+   <div class="loader-container">
+        <div class="loader">
+          <div class="glow-blur" id="glow-blur"></div>
+          <div class="glow-line" id="glow-line"></div>
+        </div>
+    </div> 
+    
     <div class="main-content" style="display: none;">
     <nav>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <i class="ri-menu-line"></i>
+          </button>
         <ul class="nav-links">
             <li class="link"><a href="#home">Home</a></li>
             <li id="link1" class="link"><a href="#projects">Projects</a></li>
