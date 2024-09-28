@@ -44,14 +44,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+let progress = 0;
+
+const glowLine = document.getElementById('glow-line');
+const glowBlur = document.getElementById('glow-blur');
+
+function updateProgress() {
+    progress = (progress === 100) ? 0 : progress + 1;
+    glowLine.style.width = progress + '%';
+    glowBlur.style.width = progress + '%';
+}
+
+document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+    this.classList.toggle('open');
+});
+
+// Update the progress bar every 20 milliseconds
+setInterval(updateProgress, 20);
+
 window.addEventListener('load', () => {
-    const loader = document.querySelector('.loader');
+    const loaderContainer = document.querySelector('.loader-container');
     const mainContent = document.querySelector('.main-content');
-  
-    // Show loader for 1 second
+
+    // Add a fade-out effect to the loader
+    loaderContainer.style.opacity = '1'; // Ensure the loader is visible at the start
     setTimeout(() => {
-      loader.style.display = 'none';  // Hide loader
-      mainContent.style.display = 'block';  // Show main content
-    }, 800);  // 1000 ms = 1 second
-  });
-  
+        loaderContainer.style.transition = 'opacity 0.5s ease'; // Transition for fading out
+        loaderContainer.style.opacity = '0'; // Fade out
+        setTimeout(() => {
+            loaderContainer.style.display = 'none'; // Hide completely after fading out
+            mainContent.style.display = 'block'; // Show the main content
+            mainContent.style.opacity = '1'; // Ensure content is visible
+        }, 500); // Wait for fade-out to complete before hiding
+    }, 1300); // Loader stays for 1.3 seconds
+});
