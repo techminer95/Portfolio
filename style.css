@@ -415,28 +415,48 @@ footer .socials .fa-linkedin {
 }
 
 .glow-line {
-  height: 3px;
-  background-color: blue;
-  box-shadow: 
-    0 0 5px blue,
-    0 0 10px blue,
-    0 0 20px blue,
-    0 0 40px blue,
-    0 0 80px blue;
-  transition: width 100ms ease-out;
-}
-
-.glow-blur {
+    height: 3px;
+    background-color: blue; /* Keeping the same color */
+    box-shadow: 
+      0 0 5px blue,
+      0 0 10px blue,
+      0 0 20px blue,
+      0 0 40px blue,
+      0 0 80px blue;
+    transition: width 100ms ease-out;
+  }
+  
+  .glow-blur {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
     height: 10px;
-    background-color: #0048ff;
+    background-color: blue; /* Changed to blue to match glow-line */
     opacity: 0.7;
     transform: translateY(-50%);
-    box-shadow: 0 0 10px #0048ff; /* Add a glowing effect */
+    box-shadow: 
+      0 0 3px blue,     /* Reduced glow */
+      0 0 5px blue,     /* Reduced glow */
+      0 0 10px blue;    /* Reduced glow */
+    animation: glowing 1.5s infinite; /* Adjusted animation timing */
   }
+  
+  /* Keyframes for glowing effect */
+  @keyframes glowing {
+    0% {
+      opacity: 0.5; /* Start with lower opacity */
+      transform: translateY(-50%) scale(1);
+    }
+    50% {
+      opacity: 1; /* Increase opacity for glowing effect */
+      transform: translateY(-50%) scale(1.05); /* Slight scale for emphasis */
+    }
+    100% {
+      opacity: 0.5; /* Fade back */
+      transform: translateY(-50%) scale(1);
+    }
+  }  
   
 
 @keyframes l2 {
