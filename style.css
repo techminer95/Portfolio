@@ -457,6 +457,16 @@ footer .socials .fa-linkedin {
       transform: translateY(-50%) scale(1);
     }
   }
+
+  @media (max-width: 768px) {
+    .glow-line {
+      height: 1px; /* Thinner on mobile */
+    }
+  
+    .glow-blur {
+      height: 3px; /* Thinner on mobile */
+    }
+  }
   
 
 @keyframes l2 {
