@@ -415,7 +415,7 @@ footer .socials .fa-linkedin {
 }
 
 .glow-line {
-    height: 3px;
+    height: 2px; /* Made it thinner */
     background-color: blue; /* Keeping the same color */
     box-shadow: 
       0 0 5px blue,
@@ -431,14 +431,14 @@ footer .socials .fa-linkedin {
     top: 50%;
     left: 0;
     width: 100%;
-    height: 10px;
+    height: 5px; /* Made it thinner */
     background-color: blue; /* Changed to blue to match glow-line */
     opacity: 0.7;
     transform: translateY(-50%);
     box-shadow: 
-      0 0 3px blue,     /* Reduced glow */
-      0 0 5px blue,     /* Reduced glow */
-      0 0 10px blue;    /* Reduced glow */
+      0 0 3px blue,     /* Subtle glow */
+      0 0 5px blue,     /* Subtle glow */
+      0 0 10px blue;    /* Subtle glow */
     animation: glowing 1.5s infinite; /* Adjusted animation timing */
   }
   
@@ -456,7 +456,7 @@ footer .socials .fa-linkedin {
       opacity: 0.5; /* Fade back */
       transform: translateY(-50%) scale(1);
     }
-  }  
+  }
   
 
 @keyframes l2 {
