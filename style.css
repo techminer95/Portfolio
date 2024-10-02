@@ -132,6 +132,11 @@ header .content h1 {
   animation: fadeIn 1s 1s forwards;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
+
 header .content h1 span {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #fff;
