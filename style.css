@@ -125,9 +125,9 @@ header .content h4 {
 header .content h1 {
   color: #fff;
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 4.5rem;
   opacity: 0;
   animation: fadeIn 1s 1s forwards;
 }
