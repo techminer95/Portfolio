@@ -79,3 +79,19 @@ window.addEventListener('load', () => {
         }, 500); // Wait for fade-out to complete before hiding
     }, 1300); // Loader stays for 1.3 seconds
 });
+
+window.onscroll = function() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = 'flex'; 
+    } else {
+        backToTopBtn.style.display = 'none'; 
+    }
+};
+
+document.getElementById('backToTopBtn').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
