@@ -325,6 +325,19 @@ footer {
   text-align: center; /* Center align text in the footer */
 }
 
+.spline-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-top: 20px; /* Add some space from the top */
+}
+
+.spline-embed {
+    width: 50vw; /* Adjust width as needed */
+    height: 60vh; /* Adjust height as needed */
+    border: none;
+}
+
+
 footer .footer-content {
   margin-bottom: 20px;
 }
