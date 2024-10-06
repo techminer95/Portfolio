@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Loader Section -->
     <div class="loader-container">
         <div class="loader">
           <div class="glow-blur" id="glow-blur"></div>
@@ -18,15 +19,17 @@
         </div>
     </div>   
 
+    <!-- Back to Top Button -->
     <button id="backToTopBtn" class="back-to-top-btn">
         <i class="ri-arrow-up-line"></i>
     </button>
     
+    <!-- Main Content -->
     <div class="main-content" style="display: none;">
     <nav>
         <button class="nav-toggle" aria-label="toggle navigation">
             <i class="ri-menu-line"></i>
-          </button>          
+        </button>          
         <ul class="nav-links">
             <li class="link"><a href="#home">Home</a></li>
             <li id="link1" class="link"><a href="#projects">Projects</a></li>
@@ -36,6 +39,7 @@
         <button class="btn">Contact Me</button>
     </nav>
 
+    <!-- Header Section -->
     <header id="home" class="container">
         <div class="content">
             <span class="blur"></span>
@@ -45,10 +49,11 @@
             <p class="justified-text">
                 Passionate software engineer with experience in C++, Python, and machine learning. I specialize in creating efficient and innovative solutions, from terminal applications to interactive games. Let's build something amazing together!
             </p>
-            <button class="btn">Explore My Work</button>
+            <a href="#projects"><button class="btn">Explore My Work</button></a>
         </div>
     </header>
 
+    <!-- Projects Section -->
     <section id="projects" class="container">
         <h2 class="header">MY PROJECTS</h2>
         <div class="features">
@@ -87,6 +92,7 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="container">
         <h2 class="header">SKILLS & EXPERTISE</h2>
         <p class="sub-header">
@@ -109,7 +115,7 @@
                         Data Structures & Algorithms
                     </p>
                 </div>
-                <button class="btn">Learn More</button>
+                <a href="#projects"><button class="btn">Learn More</button></a>
             </div>
             <div class="card">
                 <div class="content">
@@ -127,7 +133,7 @@
                         AI Algorithms
                     </p>
                 </div>
-                <button class="btn">Learn More</button>
+                <a href="#projects"><button class="btn">Learn More</button></a>
             </div>
             <div class="card">
                 <div class="content">
@@ -145,18 +151,20 @@
                         Project Management
                     </p>
                 </div>
-                <button class="btn">Learn More</button>
+                <a href="#projects"><button class="btn">Learn More</button></a>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="container">
         <h2 class="header">ABOUT ME</h2>
-            <div class="sub-header">
-                Passionate software engineer with experience in C++, Python, and machine learning. I specialize in creating efficient and innovative solutions, from terminal applications to interactive games. Let's build something amazing together!
-            </div>
+        <p class="sub-header">
+            Passionate software engineer with experience in C++, Python, and machine learning. I specialize in creating efficient and innovative solutions, from terminal applications to interactive games. Let's build something amazing together!
+        </p>
     </section>
 
+    <!-- Footer Section -->
     <footer class="container">
         <div class="footer-content">
             <h2 class="footer-heading">Socials</h2>
@@ -170,9 +178,10 @@
             <p>Copyright © 2024 Muhammad Rameez. All Rights Reserved.</p>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </div>
+
 </body>
 
 </html>
