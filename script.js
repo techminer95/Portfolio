@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         } else {
-            console.warn(Element with selector ${elementSelector} not found.);
+            console.warn(`Element with selector ${elementSelector} not found.`);
         }
     }
 
